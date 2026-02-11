@@ -11,7 +11,7 @@ class Mdr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tirthpatell/mdr/releases/download/v0.1.0/mdr_0.1.0_macOS_amd64.tar.gz"
-      sha256 "5f8f4322b64b57a97de9a8d8506dd0d5bc9033fa58c5c692134d904ffe82b9bc"
+      sha256 "1fd29f0e21f25ef958c56f53275b1c8ac04dd44c53997d6cd0655078b0263ef4"
 
       def install
         bin.install "mdr"
@@ -19,7 +19,7 @@ class Mdr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tirthpatell/mdr/releases/download/v0.1.0/mdr_0.1.0_macOS_arm64.tar.gz"
-      sha256 "a0e8e3323b909600e104ce9656631ba81e24508db8b758d783fc299f12e492d6"
+      sha256 "4dd27d417147e507cd9122ab9d50ca8307d2bca8ea5646e7de03acc03922e6a1"
 
       def install
         bin.install "mdr"
@@ -30,14 +30,14 @@ class Mdr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/tirthpatell/mdr/releases/download/v0.1.0/mdr_0.1.0_linux_amd64.tar.gz"
-      sha256 "eac156dfa6e629c15f0ec7dcf4040c2ddf24565f6eab1653402f32a74d8d6b23"
+      sha256 "fbab4c83e88fe75a05c95e21ff405a9468949031aa051c9e904b48f114403a71"
       def install
         bin.install "mdr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tirthpatell/mdr/releases/download/v0.1.0/mdr_0.1.0_linux_arm64.tar.gz"
-      sha256 "df74d2e511aa9cc65b120980ea3d2b3acb2fda7c814f3f1d4472c00da9524d9a"
+      sha256 "ad14955b1fa5cd571ad858b59b0cb5993d41e412bf6f1ce1b9a216c78206f79e"
       def install
         bin.install "mdr"
       end
