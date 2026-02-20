@@ -5,21 +5,21 @@
 class Mdr < Formula
   desc "Markdown renderer, editor, and linter for the terminal"
   homepage "https://github.com/tirthpatell/mdr"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tirthpatell/mdr/releases/download/v0.1.0/mdr_0.1.0_macOS_amd64.tar.gz"
-      sha256 "1fd29f0e21f25ef958c56f53275b1c8ac04dd44c53997d6cd0655078b0263ef4"
+      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.0/mdr_0.2.0_macOS_amd64.tar.gz"
+      sha256 "78b48d9d8b0ca1856481626d60b4bf00959e230af0e30f3da4172669eb4f3522"
 
       def install
         bin.install "mdr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tirthpatell/mdr/releases/download/v0.1.0/mdr_0.1.0_macOS_arm64.tar.gz"
-      sha256 "4dd27d417147e507cd9122ab9d50ca8307d2bca8ea5646e7de03acc03922e6a1"
+      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.0/mdr_0.2.0_macOS_arm64.tar.gz"
+      sha256 "20b10c2073b6f9703e73f0c8b781da86b058eb3dd028c73dd94c912e1b6e1810"
 
       def install
         bin.install "mdr"
@@ -29,15 +29,15 @@ class Mdr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tirthpatell/mdr/releases/download/v0.1.0/mdr_0.1.0_linux_amd64.tar.gz"
-      sha256 "fbab4c83e88fe75a05c95e21ff405a9468949031aa051c9e904b48f114403a71"
+      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.0/mdr_0.2.0_linux_amd64.tar.gz"
+      sha256 "14da3fdce2709cfa4846426f593788b4ff4ecf4c6e0b9e4c40a6c09fc2f24d84"
       def install
         bin.install "mdr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tirthpatell/mdr/releases/download/v0.1.0/mdr_0.1.0_linux_arm64.tar.gz"
-      sha256 "ad14955b1fa5cd571ad858b59b0cb5993d41e412bf6f1ce1b9a216c78206f79e"
+      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.0/mdr_0.2.0_linux_arm64.tar.gz"
+      sha256 "1d1761acc358ea13f1d90a6cdcd0fb66f4d9f12e59b01d739769cb1cfdcf492d"
       def install
         bin.install "mdr"
       end
