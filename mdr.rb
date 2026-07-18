@@ -5,21 +5,21 @@
 class Mdr < Formula
   desc "Markdown renderer, editor, and linter for the terminal"
   homepage "https://github.com/tirthpatell/mdr"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.1/mdr_0.2.1_macOS_amd64.tar.gz"
-      sha256 "cf5cbd90637165329cb1027a3d413bcd67694e40fe3fa7af89d8c719b3300e70"
+      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.2/mdr_0.2.2_macOS_amd64.tar.gz"
+      sha256 "091af43ef25d3ffe3f82bfe74d07edd8fe995b8a195f9acccdc21fdeeaeb5758"
 
       define_method(:install) do
         bin.install "mdr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.1/mdr_0.2.1_macOS_arm64.tar.gz"
-      sha256 "7b854cf892ce7c777eb4abd83b05e5c9905abe7da83747c1bf8d42ae5aa49ddf"
+      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.2/mdr_0.2.2_macOS_arm64.tar.gz"
+      sha256 "52a5b8bd7ebe149d0df1563d60db49482fad1009d6c678312061934aa358db1a"
 
       define_method(:install) do
         bin.install "mdr"
@@ -29,15 +29,15 @@ class Mdr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.1/mdr_0.2.1_linux_amd64.tar.gz"
-      sha256 "c262083899ec17e9f0cee0e27f55d40c7d060b39406a1e8f379477f08acc8748"
+      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.2/mdr_0.2.2_linux_amd64.tar.gz"
+      sha256 "bb63b8dc42933bde1cecb931aadbeea9cac9cc8b58bb401131ac8a3a3d9715fd"
       define_method(:install) do
         bin.install "mdr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.1/mdr_0.2.1_linux_arm64.tar.gz"
-      sha256 "8acc5c98c13720bfe32ca0787715625b027dc5cebac7ecfc4e6b533ec28bdeb0"
+      url "https://github.com/tirthpatell/mdr/releases/download/v0.2.2/mdr_0.2.2_linux_arm64.tar.gz"
+      sha256 "dfd996c14b580d2f55bbb174805d7105f3b25ec2232b3d05ec7bf986baab96c7"
       define_method(:install) do
         bin.install "mdr"
       end
